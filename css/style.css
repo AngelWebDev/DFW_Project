@@ -251,6 +251,11 @@ h3 {
   z-index: 0;
 }
 
+.gallery_wrapper {
+  position: relative;
+  z-index: 0;
+}
+
 /* line 179, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/theme-default.scss */
 .overlay_skyblue::before {
   position: absolute;
@@ -262,6 +267,18 @@ h3 {
   height: 100%;
   z-index: -1;
   opacity: 0.8;
+}
+
+.gallery_wrapper::before {
+  position: absolute;
+  content: "";
+  background-color: #000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
 }
 
 /* line 192, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/theme-default.scss */
@@ -1825,9 +1842,27 @@ h3 {
   font-style: normal;
   line-height: 25px!important;
   letter-spacing: .2px!important;
-  padding: 10px;
 }
 
+.general_button {
+  display: block;
+  margin: 20px 0px;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  height: auto;
+}
+
+.general_button .btn_type_default {
+  background-color: #be1e2c;
+  color: #ffffff;
+  font-size: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
 @media (max-width: 767px) {
   /* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_about.scss */
   .welcome_docmed_area {
@@ -2112,6 +2147,60 @@ h3 {
   padding-top: 60px;
 }
 
+.border_top {
+  border-top: 3px solid #E8E8E8;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.border_none {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.border_top .business_info h2 {
+  margin: 0 0 10px;
+  font-weight: 700;
+  line-height: 1.42857143;
+  font-size: 30px;
+}
+
+.border_none .business_info h2 {
+  margin: 0 0 10px;
+  font-weight: 700;
+  line-height: 1.42857143;
+  font-size: 30px;
+}
+
+.border_top .business_info p {
+  margin-bottom: 10px;
+  color: #888;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: .2px;
+}
+
+
+.border_none .business_info p {
+  margin-bottom: 10px;
+  color: #888;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: .2px;
+}
+
+.business_video {
+  width: 100%;
+  position: relative;
+}
+
+.business_video video {
+  width: 100%;
+}
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_offers.scss */
 .offers_area {
   padding-bottom: 100px;
@@ -3796,6 +3885,14 @@ img.wprevpro_t1_star_img_file {
   color: #ffffff;
   text-align: center;
   font-family: Raleway;
+  font-weight: 500;font-style: normal;
+}
+
+.gallery_wrapper .info h2 {
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+  font-family: Raleway;
   font-weight: 500;
   font-style: normal;
 }
@@ -3893,6 +3990,10 @@ img.wprevpro_t1_star_img_file {
   margin-bottom: 0;
   font-size: 16px;
   color: #2a2a2a;
+}
+
+.contact-info .media-body img {
+  width: 100%;
 }
 
 /* line 30, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_contact.scss */
@@ -4000,7 +4101,8 @@ img.wprevpro_t1_star_img_file {
 
 /* line 133, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_contact.scss */
 .contact-section {
-  padding: 130px 0 100px;
+  padding: 50px 0px;
+  background-color: #F1F1F1;
 }
 
 @media (max-width: 991px) {
@@ -4332,14 +4434,14 @@ h6 {
 /* line 297, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_elements.scss */
 .genric-btn.danger {
   color: #fff;
-  background: #f44a40;
+  background: #bf1e2d;
   border: 1px solid transparent;
 }
 
 /* line 301, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_elements.scss */
 .genric-btn.danger:hover {
-  color: #f44a40;
-  border: 1px solid #f44a40;
+  color: #bf1e2d;
+  border: 1px solid #bf1e2d;
   background: #fff;
 }
 
@@ -7003,3 +7105,100 @@ h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+/* our_gallery */
+.our_gallery {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0px;
+  color: white;  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center!important;
+  background-image: url('../img/bg/02.png');
+  position: relative;
+}
+
+
+
+.gallery_wrapper {
+  opacity: 1!important;
+}
+
+.gallery_title {
+  padding: 10px 0px;
+  opacity: 1!important;
+  
+}
+
+.gallery_title h1 {
+  color: white;
+  opacity: 1!important;
+}
+
+.gallery_wrapper .row {
+  opacity: 1!important;
+}
+
+/* image compare */
+.ba-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.ba-slider img {
+  width: 100%;
+  display:block;
+}
+
+.resize {
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+
+
+.handle { /* Thin line seperator */
+position:absolute; 
+left:50%;
+top:0;
+bottom:0;
+width:4px;
+margin-left:-2px;
+
+background: rgba(0,0,0,.5);
+cursor: ew-resize;
+}
+
+.handle:after {  /* Big orange knob  */
+  position: absolute;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  margin: -16px 0 0 -16px;
+
+  content:'\21d4';
+  color:white;
+  font-weight:bold;
+  font-size:18px;
+  text-align:center;
+  line-height:32px;
+
+  
+  border:1px solid #fff; /* darken(@orange, 5%) */
+  border-radius: 50%;
+  transition:all 0.3s ease;
+  
+}
+
+.draggable:after {
+  width: 48px;
+  height: 48px;
+  margin: -24px 0 0 -24px;
+  line-height:48px;
+  font-size:30px;
+}
+/* iamge compare end */
