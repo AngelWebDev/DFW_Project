@@ -5508,7 +5508,7 @@ h6 {
 
 /* line 14, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_blog.scss */
 .blog_area a:hover, .blog_area a :hover {
-  background: -webkit-linear-gradient(131deg, #009DFF 0%, #009DFF 99%);
+  background: -webkit-linear-gradient(131deg, #bf1e2d 0%, #bf1e2d 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
@@ -6087,7 +6087,7 @@ h6 {
   left: 10px;
   display: block;
   color: #fff;
-  background-color: #009DFF;
+  background-color: #bf1e2d;
   padding: 8px 15px;
   border-radius: 5px;
 }
