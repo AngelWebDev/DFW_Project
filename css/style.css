@@ -291,15 +291,7 @@ h3 {
 .bradcam_overlay::before {
   position: absolute;
   content: "";
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5db2ff+0,7db9e8+100&1+24,0+96 */
-  background: -moz-linear-gradient(left, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5db2ff', endColorstr='#007db9e8',GradientType=1 );
-  /* IE6-9 */
+  background-image: url(../img/bg/background11.png);
   top: 0;
   left: 0;
   width: 100%;
@@ -2164,6 +2156,10 @@ h3 {
   top: -220px;
 }
 
+.image_content_top img {
+  width: 100%;
+}
+
 .image_content_top_400 {
   width: 100%;
   position: relative;
@@ -2174,6 +2170,10 @@ h3 {
   width: 100%;
   position: relative;
   top: -125px;
+}
+
+.image_content_top_125 img {
+  width: 100%;
 }
 
 .image_content {
@@ -2237,6 +2237,29 @@ h3 {
   /* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_offers.scss */
   .offers_area {
     padding-bottom: 40px;
+  }
+  .image_content_top {
+    width: 100%;
+    position: relative;
+    top: 0px;
+  }
+  
+  .image_content_top img {
+    width: 100%;
+  }
+  
+  .image_content_top_400 {
+    width: 100%;
+    position: relative;
+  }
+  
+  .image_content_top_125 {
+    width: 100%;
+    position: relative;
+  }
+  
+  .image_content_top_125 img {
+    width: 100%;
   }
 }
 
@@ -3108,33 +3131,35 @@ h3 {
 
 /* line 10, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_bradcam.scss */
 .bradcam_area {
-  padding: 170px;
   background-size: cover;
   background-position: center center;
-  padding: 148px 0px;
+  padding: 70px 0px;
   background-repeat: no-repeat;
 }
 
 @media (max-width: 767px) {
   /* line 10, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_bradcam.scss */
   .bradcam_area {
-    padding: 120px 0;
+    padding: 90px 0;
   }
 }
 
 /* line 20, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_bradcam.scss */
 .bradcam_area h3 {
-  font-size: 50px;
-  color: #fff;
-  font-weight: 600;
   margin-bottom: 0;
-  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: .1px;
+  font-size: 32px;
+  font-family: "Raleway",Arial,sans-serif;
+  font-style: normal;
+  color: #000;
 }
 
 @media (max-width: 767px) {
   /* line 20, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_bradcam.scss */
   .bradcam_area h3 {
     font-size: 30px;
+    text-align: center;
   }
 }
 
@@ -7233,4 +7258,8 @@ cursor: ew-resize;
   border-top: 3px solid #E8E8E8;
   position: relative;
   top: -75px;
+}
+
+#navigation li a.active {
+  color: #bf1e2d;
 }
