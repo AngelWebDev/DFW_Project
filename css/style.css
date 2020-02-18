@@ -7692,7 +7692,7 @@ p {
 .panel-warning .h4,
 .panel-warning .h5,
 .panel-warning .h6 {
-  color: #ab8d00;
+  color: #000!important;
 }
 .panel-danger {
   border-color: #ebccd1;
